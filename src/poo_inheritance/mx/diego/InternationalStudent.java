@@ -26,4 +26,19 @@ public class InternationalStudent extends Student{
     public void setLanguagesScore(double languagesScore) {
         this.languagesScore = languagesScore;
     }
+
+    @Override
+    String wave(){
+        return super.wave().concat(" am a foreign from ").concat(country);
+    }
+
+    @Override
+    double average(){return ((super.average() * 2) + languagesScore) / 3;}
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "country='" + country + '\'' +
+                ", languagesScore=" + languagesScore;
+    }
 }

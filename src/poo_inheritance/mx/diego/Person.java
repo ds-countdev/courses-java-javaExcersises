@@ -12,4 +12,17 @@ class Person {
     Person(String name, String lastName){this(name); this.lastName =lastName;}
     Person(String name, String lastName, int age) {this(name, lastName); this.age = age;}
     Person(String name, String lastName, int age, String email) {this(name, lastName, age); this.email = email;}
+
+    String wave(){
+        return "Hi there!";
+    }
+
+    @Override
+    public String toString() {
+        return "name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                ", email='" + email + "\n" +
+                this.wave();
+    }
 }
