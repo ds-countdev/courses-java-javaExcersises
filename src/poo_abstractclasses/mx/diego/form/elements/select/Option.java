@@ -28,7 +28,14 @@ public class Option {
 
     public boolean isSelect() {return isSelect;}
 
-    public void setSelect(boolean select) {isSelect = select;}
+    public void setSelect(boolean select) {
+        this.isSelect = select;
+    }
+
+    public Option setSelect() {
+        this.isSelect = true;
+        return this;
+    }
 
     public Option(String value, String name) {
         this.setName(name);
