@@ -11,10 +11,7 @@ import poo_abstractclasses.mx.diego.form.validator.NotNull;
 import poo_abstractclasses.mx.diego.form.validator.NumberValidator;
 import poo_abstractclasses.mx.diego.form.validator.ValidatorRequired;
 
-import javax.swing.text.AbstractDocument;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class FormExample {
     public static void main(String[] args) {
