@@ -10,8 +10,8 @@ abstract public class ElementForm {
     protected String value;
     protected String name;
 
-    private List<Validator> validators;
-    private List<String> errors;
+    private final List<Validator> validators;
+    private final List<String> errors;
 
     public ElementForm(){
         this.validators = new ArrayList<>();

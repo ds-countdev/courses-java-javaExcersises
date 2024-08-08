@@ -26,7 +26,7 @@ public class StreamSingleFilterExample {
         System.out.println("User = " + getUserId);
     }
 
-    public <T> String doSomething(T... objects){
+    public <T> T doSomething(T... objects){
         return null;
     }
 }
